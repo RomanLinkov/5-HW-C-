@@ -9,7 +9,7 @@ int lngth = NumberInput("Введите длину массива: ");
 int min = NumberInput("Введите минимальный элемент массива: ");
 int max = NumberInput("Введите максимальный элемент массива: ");
 
-int[] nums = ArrayGeneration(lngth, min, max+1);
+int[] nums = IntArrayGeneration(lngth, min, max+1);
 
 int sumOddPositions=SumOddPositions(nums);
 
@@ -41,7 +41,7 @@ void PrintArray(int[] a)
     
 }
 
-int[] ArrayGeneration(int lngth, int min, int max)
+int[] IntIntArrayGeneration(int lngth, int min, int max)
 {
     int[] array = new int[lngth];
     Random rand = new Random();

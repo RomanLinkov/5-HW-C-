@@ -7,7 +7,7 @@ Console.Clear();
 
 int lngth = NumberInput("Введите длину массива: ");
 
-int[] nums = ArrayGeneration(lngth, 100, 1000);
+int[] nums = IntArrayGeneration(lngth, 100, 1000);
 
 int quantEvenNumbers=QuantEvenNumbers(nums);
 
@@ -39,7 +39,7 @@ void PrintArray(int[] a)
     
 }
 
-int[] ArrayGeneration(int lngth, int min, int max)
+int[] IntArrayGeneration(int lngth, int min, int max)
 {
     int[] array = new int[lngth];
     Random rand = new Random();
