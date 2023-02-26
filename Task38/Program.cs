@@ -8,7 +8,7 @@ int lngth = NumberInput("Введите длину массива: ");
 int min = NumberInput("Введите минимальный элемент массива: ");
 int max = NumberInput("Введите максимальный элемент массива: ");
 
-double[] nums = DoubleArrayGeneration(lngth, min, max+1);
+double[] nums = DoubleArrayGeneration(lngth, min, max);
 
 double difMaxMin=DoubleArrayFindMax(nums)-DoubleArrayFindMin(nums);
 
@@ -54,6 +54,7 @@ void PrintArrayDouble(double[] a)
 double[] DoubleArrayGeneration(int lngth, int min, int max)
 {
     double[] array = new double[lngth];
+    max=max+1;
     Random rand = new Random();
     for (int i = 0; i<lngth;i++)
     {
